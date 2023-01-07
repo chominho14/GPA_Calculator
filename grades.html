@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>201744059_조민호</title>
+    <script src="grades.js"></script>
+    <script src="gradesTwo.js"></script>
+    <script src="gradesThree.js"></script>
+    <link rel="stylesheet " href="grades.css" />
+  </head>
+  <body>
+    <!-- <div>201744059 3학년 B반 조민호입니다.</div> -->
+
+    <div id="info_container">
+      <div id="info_title">사용 방법</div>
+      <div id="info_description">
+        <ul>
+          <li>
+            출석과 과제 점수는 0~20점, 중간고사와 기말고사 점수는 0~30점으로
+            입력해 주세요.
+          </li>
+          <li>1학점 과목은 이수를 교양으로 선택해야만 입력이 가능합니다.</li>
+          <li>
+            1학점 과목은 점수 입력이 불가능합니다. 패스인 경우에만 추가해
+            주세요.
+          </li>
+          <li>한 학년에 중복된 과목은 추가할 수 없습니다.</li>
+          <li>체크 박스에 체크를 했을 경우에만 삭제가 가능합니다.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="all_container">
+      <div class="grade_container">
+        <div class="gradeAndBtn">
+          <span class="gradeSpan">1학년</span>
+          <div class="gradeBtAddDeleteSave">
+            <button onclick="javascript:handleAddBtn()" id="addBtn">
+              추가
+            </button>
+            <button onclick="javascript:handleDeleteBtn()" id="deleteBtn">
+              삭제
+            </button>
+            <button onclick="javascript:handleSaveBtn()" id="saveBtn">
+              저장
+            </button>
+          </div>
+        </div>
+        <table id="table_container1">
+          <thead id="table_thead">
+            <th id="chk_box"></th>
+            <th>이수</th>
+            <th>필수</th>
+            <th id="table_SubjectName">과목명</th>
+            <th>학점</th>
+            <th id="attendance_score">출석점수</th>
+            <th id="assignment_score">과제점수</th>
+            <th id="midterm_score">중간고사</th>
+            <th id="final_score">기말고사</th>
+            <th>총점</th>
+            <th>평균</th>
+            <th>성적</th>
+          </thead>
+          <tbody id="table_tbody"></tbody>
+          <tfoot>
+            <th colspan="4" scope="col">합계</th>
+            <th id="grades_sum"></th>
+            <th id="attendance_sum"></th>
+            <th id="assignment_sum"></th>
+            <th id="midterm_sum"></th>
+            <th id="final_sum"></th>
+            <th id="total_sum"></th>
+            <th id="total_avg"></th>
+            <th id="total_grade"></th>
+          </tfoot>
+        </table>
+      </div>
+      <div class="grade_container">
+        <div class="gradeAndBtn">
+          <span class="gradeSpan">2학년</span>
+          <div class="gradeBtAddDeleteSave">
+            <button onclick="javascript:handleAddBtnTwo()" id="addBtn2">
+              추가
+            </button>
+            <button onclick="javascript:handleDeleteBtnTwo()" id="deleteBtn2">
+              삭제
+            </button>
+            <button onclick="javascript:handleSaveBtnTwo()" id="saveBtn2">
+              저장
+            </button>
+          </div>
+        </div>
+        <table id="table_container2">
+          <thead id="table_thead2">
+            <th id="chk_box"></th>
+            <th>이수</th>
+            <th>필수</th>
+            <th id="table_SubjectName">과목명</th>
+            <th>학점</th>
+            <th id="attendance_score">출석점수</th>
+            <th id="assignment_score">과제점수</th>
+            <th id="midterm_score">중간고사</th>
+            <th id="final_score">기말고사</th>
+            <th>총점</th>
+            <th>평균</th>
+            <th>성적</th>
+          </thead>
+          <tbody id="table_tbody2"></tbody>
+          <tfoot>
+            <th colspan="4" scope="col">합계</th>
+            <th id="grades_sum2"></th>
+            <th id="attendance_sum2"></th>
+            <th id="assignment_sum2"></th>
+            <th id="midterm_sum2"></th>
+            <th id="final_sum2"></th>
+            <th id="total_sum2"></th>
+            <th id="total_avg2"></th>
+            <th id="total_grade2"></th>
+          </tfoot>
+        </table>
+      </div>
+      <div class="grade_container">
+        <div class="gradeAndBtn">
+          <span class="gradeSpan">3학년</span>
+          <div class="gradeBtAddDeleteSave">
+            <button onclick="javascript:handleAddBtnThree()" id="addBtn">
+              추가
+            </button>
+            <button onclick="javascript:handleDeleteBtnThree()" id="deleteBtn">
+              삭제
+            </button>
+            <button onclick="javascript:handleSaveBtnThree()" id="saveBtn">
+              저장
+            </button>
+          </div>
+        </div>
+        <table id="table_container3">
+          <thead id="table_thead">
+            <th id="chk_box"></th>
+            <th>이수</th>
+            <th>필수</th>
+            <th id="table_SubjectName">과목명</th>
+            <th>학점</th>
+            <th id="attendance_score">출석점수</th>
+            <th id="assignment_score">과제점수</th>
+            <th id="midterm_score">중간고사</th>
+            <th id="final_score">기말고사</th>
+            <th>총점</th>
+            <th>평균</th>
+            <th>성적</th>
+          </thead>
+          <tbody id="table_tbody3"></tbody>
+          <tfoot>
+            <th colspan="4" scope="col">합계</th>
+            <th id="grades_sum3"></th>
+            <th id="attendance_sum3"></th>
+            <th id="assignment_sum3"></th>
+            <th id="midterm_sum3"></th>
+            <th id="final_sum3"></th>
+            <th id="total_sum3"></th>
+            <th id="total_avg3"></th>
+            <th id="total_grade3"></th>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+table {
+  width: 100%;
+  border: 1px white;
+}
+
+th,
+td {
+  border: 1px white;
+  text-align: center;
+  padding: 2px;
+}
+
+table thead {
+  width: 500px;
+  color: white;
+  background-color: #89abc5;
+}
+
+table tfoot {
+  width: 500px;
+  color: black;
+  background-color: #baddf9;
+}
+
+table thead th {
+  width: 50px;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #e0e2e1;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f5f5f6;
+}
+
+.grade_container {
+  width: 900px;
+  /* background-color: #bbdefb; */
+  /* background-color: #89abc5; */
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.gradeSpan {
+  font-size: large;
+}
+
+.gradeAndBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gradeBtAddDeleteSave {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.gradeBtAddDeleteSave button {
+  margin-right: 5px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+#table_container1 tbody tr th input {
+  width: 70%;
+}
+
+#table_container2 tbody tr th input {
+  width: 70%;
+}
+
+#table_container3 tbody tr th input {
+  width: 70%;
+}
+
+#inputTr {
+  background-color: white;
+}
+
+#inputTr2 {
+  background-color: white;
+}
+
+#inputTr3 {
+  background-color: white;
+}
+
+#table_SubjectName {
+  width: 100px;
+}
+
+#attendance_score {
+  width: 70px;
+}
+#assignment_score {
+  width: 70px;
+}
+#midterm_score {
+  width: 70px;
+}
+#final_score {
+  width: 70px;
+}
+
+#chk_box {
+  width: 20px;
+}
+
+#info_container {
+  margin: 40px;
+}
+
+#info_title {
+  font-size: large;
+  color: #919192;
+}
+
+#info_description {
+  color: #919192;
+}
+
+#info_description ul li {
+  padding: 3px;
+  font-size: small;
+}
