@@ -2,7 +2,7 @@
 
 ---
 
-## Project
+## Project Description
 
 - It receives course information and calculates grades.
 
